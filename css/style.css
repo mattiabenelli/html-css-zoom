@@ -5,15 +5,14 @@
 }
 
 /* struttura header */
-/* header{
-    width: 100vw;
+header{
     height: 10vh;
-} */
+}
 .container-header{
     height: 10vh;
     position: fixed;
     margin: 0 auto;
-    width: 100vw;
+    width: 100vw;  
 }
 .row{
     display: flex;
@@ -38,3 +37,34 @@
     justify-content: end;
     align-items: flex-start;
 }
+
+/* struttura main */
+main{
+    overflow: auto;
+}
+.container_main{
+    height: 70vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+.col_7{
+    width: calc(100% / 7);
+    margin: 5px;
+    height: 100px;
+ }
+ .webcam{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    border: 1px dashed black;
+    position: relative;
+ }
+ .utente{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: 20px;
+    background-color: beige;
+    border: 1px dashed black;
+ }
