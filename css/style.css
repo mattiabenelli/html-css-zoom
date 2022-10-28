@@ -5,14 +5,21 @@
 }
 
 /* struttura header */
-header{
-    height: 10vh;
-}
-.container-header{
-    height: 10vh;
-    position: fixed;
+.container_header{
+    height: 10vh;   
     margin: 0 auto;
-    width: 100vw;  
+    width: 100vw;
+    background-color: bisque; 
+}   
+.col_speaker_view, .col_speaker_full_screen{
+    width: calc(100% / 7);
+    margin: 5px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px dashed black;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;    
 }
 .row{
     display: flex;
@@ -24,26 +31,18 @@ header{
     display: flex;
     justify-content: end;
     width: 100%;
-    height: 50px;
+    height: 100%;
     background-color: beige;
     border: 1px dashed black;
 }
-.speaker_view, .speaker_full_screen{
-    height: 50px;
-    width: 200px;
-    background-color: aqua;
-    border: 1px dashed black;
-    display: flex;
-    justify-content: end;
-    align-items: flex-start;
-}
+
 
 /* struttura main */
 main{
     overflow: auto;
 }
 .container_main{
-    height: 70vh;
+    height: 80vh;
     width: 90vw;
     margin: 0 auto;
 }
@@ -68,3 +67,26 @@ main{
     background-color: beige;
     border: 1px dashed black;
  }
+
+ /* struttura footer */
+ .container_footer{
+    height: 10vh;
+    position: fixed;
+    margin: 0 auto;
+    width: 100vw;
+    background-color: bisque;  
+}
+.col_3{    
+    width: calc(100% / 7);
+    margin: 5px;
+    height: 100px;
+}
+.stato_utente, .strumenti_stanza, .esci{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    border: 1px dashed black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
