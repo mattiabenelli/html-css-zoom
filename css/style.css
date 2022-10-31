@@ -4,9 +4,9 @@
     box-sizing: border-box;
     color: white;
 }
-/* body{
+body{
     background-color: black;
-} */
+}
 /* struttura header */
 .container-header{
     height: 5vh;   
@@ -67,24 +67,15 @@ main{
     position: fixed;
     margin: 0 auto;
     width: 100vw;
-    background-color: bisque;  
+    background-color: #222222;  
 }
 .col_3{    
-    width: calc(100% / 3);
+    width: calc(100% / 3 -20px);
     margin: 5px;
     height: 100px;
     display: flex;
 }
-.colonna-centrale, .esci{
-    height: 100%;
-    width: 100%;
-    background-color: aqua;
-    border: 1px dashed black;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-    padding: 0 20px;   
-}
+
 
 /* stile header */
 .col_speaker_view i{
@@ -105,10 +96,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid black;
 }
 .stato_utente{
     display: flex;
+    text-align: center;
 }
 .action{
     text-align: center;
@@ -122,6 +113,7 @@ main{
 }
 .dot{
     font-size: 25px;
+    margin-top: 10px;
 }
 #green{
     color: greenyellow;
@@ -129,6 +121,12 @@ main{
 .text_red{
     color: red;
 }
-.bg_red{
+.bg_gray{
     background-color: #4a4a4a;
+}
+.item{
+    padding: 10px 10px;
+}
+.esci{
+    padding: 30px 20px;
 }
